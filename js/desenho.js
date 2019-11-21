@@ -28,6 +28,7 @@ var scene = new THREE.Scene();
 			
 			var xSpeed = 0.05;
 			var ySpeed = 0.05;
+			var zSpeed = 0.05;
 			
 			document.addEventListener("keydown", onDocumentKeyDown, false);
 			function onDocumentKeyDown(event) {
@@ -40,7 +41,11 @@ var scene = new THREE.Scene();
 					sphere.position.y += ySpeed;
 				} else if(keyCode == 40){
 					sphere.position.y -= ySpeed;
-				}
+				} else if(keyCode == 34) {
+					sphere.position.z += zSpeed;
+				} else if(keyCode == 33){
+					sphere.position.z -= zSpeed;
+				} 
 			};
 				
 			var animate = function () {
