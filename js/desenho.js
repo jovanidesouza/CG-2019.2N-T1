@@ -26,8 +26,6 @@ var scene = new THREE.Scene();
 			sphere.rotateZ(0.6);
 			scene.add( sphere );
 			
-			// movement - please calibrate these values
-			
 			var xSpeed = 0.05;
 			var ySpeed = 0.05;
 			
