@@ -1,5 +1,5 @@
-# CG_ThreeJS
-Trabalho de Computação Gráfica usando WebGL e Three.js
+
+# Trabalho de Computação Gráfica usando WebGL e Three.js
 
 
 # Para executar o demo:
