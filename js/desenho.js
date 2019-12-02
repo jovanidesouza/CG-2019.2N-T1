@@ -52,6 +52,7 @@ var scene = new THREE.Scene();
 			var start = 5;
 			var altura = -2;
 			var sentido = 1
+			
 				
 			var animate = function () {
 				requestAnimationFrame( animate );
