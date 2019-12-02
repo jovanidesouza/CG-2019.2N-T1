@@ -16,7 +16,7 @@ var scene = new THREE.Scene();
 	
 		
 			var geometry = new THREE.SphereGeometry( 0.5, 32, 32 );
-			var texture = new THREE.TextureLoader().load( 'textures/bola.PNG' );
+			var texture = new THREE.TextureLoader().load( 'textures/bola.png' );
 			var material = new THREE.MeshBasicMaterial( { map: texture } );
 			var sphere = new THREE.Mesh( geometry, material );
 			
