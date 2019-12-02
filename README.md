@@ -13,5 +13,9 @@ Matrícula: 1311100017
 2- acessar no navegador -> localhost:8000
 
 
+# Para visualizar o projeto:
+
+acesse: https://jovanidesouza.github.io/CG-2019.2N-T1/
+
 
 
