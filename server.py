@@ -7,7 +7,7 @@ print("1 to start the server\n2 to close the aplication")
 op = int(input())
 
 if op == 1:
-	PORT = 8080
+	PORT = 8000
 	ADDRESS = ("", PORT)
 	Handler = http.server.SimpleHTTPRequestHandler
 	
