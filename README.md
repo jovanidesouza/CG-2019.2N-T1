@@ -8,9 +8,9 @@ Matrícula: 1311100017
 
 # Para executar o demo:
 
-1- rodar o script -> server.py (com python 3)
+1- Acesse o diretório do projeto e execute: 'python3 -m http.server' (Ou execute o script server.py)
 
-2- acessar no navegador -> localhost:8080
+2- acessar no navegador -> localhost:8000
 
 
 
