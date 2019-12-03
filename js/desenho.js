@@ -2,7 +2,7 @@
 var scene = new THREE.Scene();
 
 			var camera = new THREE.PerspectiveCamera( 100, window.innerWidth/window.innerHeight, 0.1, 1000 );
-			camera.position.set( 0, 0, 15 );
+			camera.position.set( 0, 3, 16 );
 
 			var renderer = new THREE.WebGLRenderer();
 			renderer.setSize( window.innerWidth, window.innerHeight );
@@ -20,8 +20,8 @@ var scene = new THREE.Scene();
 			var material = new THREE.MeshBasicMaterial( { map: texture } );
 			var sphere = new THREE.Mesh( geometry, material );
 			
-			sphere.translateZ(5)
-			sphere.translateY(-2);
+			sphere.translateZ(12)
+			sphere.translateY(1);
 			sphere.rotateY(-1.5);
 			sphere.rotateX(0.1);
 			sphere.rotateZ(0.6);
@@ -52,37 +52,15 @@ var scene = new THREE.Scene();
 			var start = 5;
 			var altura = -2;
 			var sentido = 1
-			
+			var jump_start = Date.now();
 				
 			var animate = function () {
+				
 				requestAnimationFrame( animate );
 	
-				//sphere.rotation.x -= 0.05;
+				var timer = Date.now() - jump_start;
+				sphere.position.y = Math.abs( Math.sin( timer * 0.002 ) ) * 2;
 				
-				if(start < 11.5){
-					start += 0.05;
-					sphere.position.z = start;
-					//sphere.rotation.x -= 0.05;
-				}
-				
-				if (sentido == 1){
-					altura += 0.03;
-					sphere.position.y = altura;
-					if(altura >= 0){
-						sentido = -1;
-						
-					}
-				}
-				if (sentido == -1){
-					altura -= 0.03;
-					sphere.position.y = altura;
-					if(altura <= -2){
-						sentido = 1;
-						
-					}
-				}
-				
-
 				renderer.render( scene, camera );
 			};
 
