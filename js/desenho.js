@@ -1,4 +1,3 @@
-//alert('Use as setas + PgUp e PgDn para movimentar o pokemon');
 var scene = new THREE.Scene();
 
 			var camera = new THREE.PerspectiveCamera( 100, window.innerWidth/window.innerHeight, 0.1, 1000 );
@@ -9,14 +8,14 @@ var scene = new THREE.Scene();
 			document.body.appendChild( renderer.domElement );
 			renderer.setClearColor (0x20bfff, 1);
 			
-			var fundo = new THREE.TextureLoader().load( 'textures/floor.jpg' );
+			var fundo = new THREE.TextureLoader().load( 'img/floor.jpg' );
 			scene.background = fundo;
 			//Scene, camera , renderer //
 					
 	
 		
 			var geometry = new THREE.SphereGeometry( 0.5, 32, 32 );
-			var texture = new THREE.TextureLoader().load( 'textures/bola.png' );
+			var texture = new THREE.TextureLoader().load( 'textures/esfera.png' );
 			var material = new THREE.MeshBasicMaterial( { map: texture } );
 			var sphere = new THREE.Mesh( geometry, material );
 			
@@ -38,14 +37,10 @@ var scene = new THREE.Scene();
 					sphere.position.x += xSpeed;
 				} else if(keyCode == 37) {
 					sphere.position.x -= xSpeed;
-				} else if(keyCode == 38) {
-					sphere.position.y += ySpeed;
-				} else if(keyCode == 40){
-					sphere.position.y -= ySpeed;
 				} else if(keyCode == 34) {
-					sphere.position.z += zSpeed;
+					sphere.position.y += ySpeed;
 				} else if(keyCode == 33){
-					sphere.position.z -= zSpeed;
+					sphere.position.y -= ySpeed;
 				} 
 			};
 			
