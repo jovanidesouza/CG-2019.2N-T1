@@ -37,10 +37,10 @@ var scene = new THREE.Scene();
 					sphere.position.x += xSpeed;
 				} else if(keyCode == 37) {
 					sphere.position.x -= xSpeed;
-				} else if(keyCode == 34) {
-					sphere.position.y += ySpeed;
-				} else if(keyCode == 33){
-					sphere.position.y -= ySpeed;
+				} else if(keyCode == 40) {
+					sphere.position.z += zSpeed;
+				} else if(keyCode == 38){
+					sphere.position.z -= zSpeed;
 				} 
 			};
 			
