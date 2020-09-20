@@ -1,4 +1,4 @@
-#ThreeJs Demo
+# ThreeJs Demo
 
 
 [See Live](https://jovanidesouza.github.io/threejs-demo/)
