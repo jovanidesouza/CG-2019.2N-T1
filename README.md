@@ -1,12 +1,13 @@
 # WebGL and ThreeJs Demo
 
-![Image](demo.gif)
-
 ---
 
 [See Live](https://jovanidesouza.github.io/threejs-demo/)
 
 ---
+
+![Image](demo.gif)
+
 
 ## How To Use
 From your command line:
